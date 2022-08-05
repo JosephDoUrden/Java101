@@ -5,7 +5,7 @@ public class app {
         Scanner input = new Scanner(System.in);
 
         int distance, age, flightType;
-        double actualPrice, perKm = 0.10, discount, discountedPrice, ageDiscount, total, twoWayDiscount;
+        double actualPrice, perKm = 0.10, discount, discountedPrice, ageDiscount, twoWayDiscount;
 
         System.out.print("Uçuş mesafesini km cinsinden giriniz: ");
         distance = input.nextInt();
@@ -36,7 +36,6 @@ public class app {
 
             if (flightType == 2){
                 twoWayDiscount = discountedPrice * 0.20;
-                //total = (discountedPrice-twoWayDiscount)*2;
                 System.out.println("Toplam Tutar: " + (discountedPrice-twoWayDiscount)*2);
             }else {
                 System.out.println("Toplam Tutar: " + discountedPrice);
